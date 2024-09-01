@@ -12,10 +12,12 @@ public class ContaPoupanca extends ContaBancaria {
         return 0;
     }
     public ContaPoupanca(){
-
-    };
+        super();
+        nomeTipoConta = "Conta Poupança";
+    }
     public ContaPoupanca(float valorMinimo, String tipoConta) {
         super();
+        nomeTipoConta = "Conta Poupança";
         this.valorMinimo = valorMinimo;
         this.tipoConta = tipoConta;
     }

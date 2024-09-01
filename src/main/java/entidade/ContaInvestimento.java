@@ -8,9 +8,15 @@ public class ContaInvestimento extends ContaBancaria{
     public float calcularJuros() {
         return taxaJurosInvestimento * valorInvestido;
     }
+
     public ContaInvestimento(){
-    };
+        super();
+        nomeTipoConta = "Conta Investimento";
+    }
+
     public ContaInvestimento(float taxaJurosInvestimento, float valorInvestido) {
+        super();
+        nomeTipoConta = "Conta Investimento";
         this.taxaJurosInvestimento = taxaJurosInvestimento;
         this.valorInvestido = valorInvestido;
     }

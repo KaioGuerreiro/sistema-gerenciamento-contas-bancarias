@@ -26,9 +26,11 @@ public class ContaCorrente extends ContaBancaria{
     }
 
     public ContaCorrente(){
-
+        super();
+        nomeTipoConta = "Conta Corrente";
     };
     public ContaCorrente(float limiteEspecial, float taxaAdicional) {
+        nomeTipoConta = "Conta Corrente";
         this.limiteEspecial = limiteEspecial;
         this.taxaAdicional = taxaAdicional;
     }

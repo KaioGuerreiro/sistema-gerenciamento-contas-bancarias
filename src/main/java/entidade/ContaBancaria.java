@@ -21,6 +21,10 @@ public class ContaBancaria {
         this.taxa = taxa;
     }
 
+    public String getNomeTipoConta() {
+        return nomeTipoConta;
+    }
+
     public ContaBancaria(){
         saldo = 0f;
         taxa = 0f;
